@@ -1,0 +1,140 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+      max-height: 100px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="https://kamikazeproject.w3spaces.com/main.html" class="w3-bar-item w3-button w3-theme-l1">World War II Project</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#" target="_self">Info</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://kamikazeproject.w3spaces.com/qanda.html" target="_blank">Q&A</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="https://kamikazeproject.w3spaces.com/workcited.html" target="_blank">Works Cited</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-container">
+      <h1 class="header" class="w3-text-Grey">Info</h1>
+      <p class="text">Kamikaze pilots were first employed on October 25, 1944. The tactic was first shown in the Battle of Leyte Gulf, which was the largest navel battle in history. These Kamikazes were special forces tasked with flying into Allied ships which planes strapped with tons of explosives. These would create massive damage into ships and killed thousands of Allied sailors. Motoharu Okamura was the commander of the Kamikaze squadron and firmly believed that crash-diving attacks would turn the tide of the war. Kamikazes would be used throughtout the rest of the war. More than 3,000 Japanese pilots ended up dying and more than 7,000 American, Australian and British troops also died to the tactic. In the end, Okamura was wrong and the Kamikazes did not turn the tide of the war and Japan surrendered after the two atomic bombs were dropped on Hiroshima and Nagisaki.
+         A specialized plane was made for Kamikaze pilots which was basically a human guided missle. It was built to be able to plunge down at battleships with a lot of force and its nose which was filled with explosive charges weighed more than a ton. The Allies nicknamed these missiles "Baka Bombs" from the Japanese word for fool or idiot. Kamikaze attacks sunk 34 ships and damaged hundreds of others. The best way the Allies found to take out stop a Kamikaze attack from happeneing was to station destroyers, which is a type of warship, around capital ships and make then shoot the planes out of the air with antiaircraft batteries. Kamikaze pilots were young men and they would performed a special ceremony of drinking sake and eating rice before flying. They were also given medals and a Katana sword during these cerremonies. The pilots also carried beloved possessions to be treasured upon death </p>
+    </div>
+  </div>
+
+<div >
+  <img class="picture" src="https://upload.wikimedia.org/wikipedia/commons/5/54/Naval_ensign_of_the_Empire_of_Japan.svg">
+</div>
+
+
+  <footer id="footer" class="footer">
+    <div class="w3-container w3-theme-l2 w3-padding-16">
+      <h4 class="footerfooter">Kamikaze Porject for Mr. Teed's history class</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Made by Cyris Sullivan</p>
+    </div>
+  </footer>
+
+<style>
+.footer {
+  position: fixed;
+  left: 50;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+
+<style>
+  .picture{
+  width: 500px;
+  height: 300px;
+  margin-left: 20px;
+  margin-bottom: 150px;
+  }
+  </style>
+
+
+<style>
+.footerfooter {
+  font-size: 15px;
+}
+</style>
+
+<style>
+  .text{
+  font-size: 18px;
+  line-height: 2;
+  }
+</style>
+
+<style>
+  .header{
+  font-size: 40px;
+  }
+</style>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
